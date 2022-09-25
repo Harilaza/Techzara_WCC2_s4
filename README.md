@@ -1,4 +1,4 @@
-# TECHZARA_WCC2_s3
+# TECHZARA_WCC2_s4
 
 # APPLICATION NAME
 - Teknium Quiz
@@ -18,7 +18,7 @@
 ```
 pip install -r requirements.txt
 ```
-## Runnig
+## Running
 - In the powershell bash type:
 ```
 python main.py
