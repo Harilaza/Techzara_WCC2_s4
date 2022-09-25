@@ -27,7 +27,7 @@ python main.py
 ## PowerShell VS CMD 
 <div>
   <img src="assets/powershell.png" alt= "powershell_aide_1" width="49%" height="auto"/><img src="assets/console.png" alt= "cmd_aide_1" width="49%" height="auto"/>
-  <img src="assets/powershell_help.png" alt= "powershell_aide_2" width="49%" height="auto"/><img src="assets/console_help.PNG" alt= "cmd_aide_2" width="49%" height="auto"/>
+  <img src="assets/powershell_help.png" alt= "powershell_aide_2" width="49%" height="auto"/><img src="assets/console_help.png" alt= "cmd_aide_2" width="49%" height="auto"/>
 </div>
 
 
