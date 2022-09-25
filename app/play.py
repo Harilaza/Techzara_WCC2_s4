@@ -12,6 +12,7 @@ from answer.unique_answer import unique_answer_easy as u_easy, unique_answer_med
 from answer.int_answer import easy_list_int as eli, medium_list_int as mli, hard_list_int as hli
 from answer.str_answer import easy_list_str as els, medium_list_str as mls, hard_list_str as hls
 from schemas.shemas import show_win
+from checking.check import go_again
 
 
 # Function which start the game
@@ -55,6 +56,11 @@ def mode_selector(mode):
                         else:
                             show_win()
                             print("Bravo vous avez réussi le mode Facile")
+                            reload = input("voulez-vous recommencer ? (o/n): ")
+                            if go_again(reload) == 0:
+                                mode_selector_interface()
+                            else:
+                                quiz_quit()
         elif mode == 2:     #launching new level : medium if player want a medium level
             if multiple_run(mm) == 1:
                 starter()
@@ -70,6 +76,11 @@ def mode_selector(mode):
                         else:
                             show_win()
                             print("Vous avez réussi le niveu moyen") # winning the level
+                            reload = input("voulez-vous recommencer ? (o/n): ")
+                            if go_again(reload) == 0:
+                                mode_selector_interface()
+                            else:
+                                quiz_quit()
         elif mode == 3:         # launching hard level if player wants high level
             if multiple_run(mh) == 1:
                 starter()
@@ -85,6 +96,11 @@ def mode_selector(mode):
                         else:
                             show_win()
                             print("Vous avez réussi le niveu difficile")
+                            reload = input("voulez-vous recommencer ? (o/n): ")
+                            if go_again(reload) == 0:
+                                mode_selector_interface()
+                            else:
+                                quiz_quit()
         else:
             print("il n'y pas d'option valide pour ce choix.") # this is out of range
             print("choisissez entre 1, 2 ou 3")

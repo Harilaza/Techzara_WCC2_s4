@@ -15,3 +15,10 @@ def is_not_number(choice):
         return True
     else:
         return False
+
+
+def go_again(text):
+    if text == 'o' or text == 'O':
+        return 0
+    else:
+        return 1
